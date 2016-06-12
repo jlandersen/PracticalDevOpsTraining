@@ -76,8 +76,6 @@
 
 If you have time left, you could additionally cover topics like:
 
-* How to bump version numbers
-* How to version unsupported file types
 * Read http://gitversion.readthedocs.io 
 
 ## Setup CD to Azure
