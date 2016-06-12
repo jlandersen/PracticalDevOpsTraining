@@ -58,7 +58,7 @@
    ![Set load test location](img/set-load-test-location.png)
 
 1. Select the test location you want to use (ideally the location where you deployed you web app to).<br/>
-   ![Select load test location](/img/select-cloud-test-location.png)
+   ![Select load test location](img/select-cloud-test-location.png)
 
 1. Run load test.<br/>
    ![Run load test](img/run-load-test.png)
