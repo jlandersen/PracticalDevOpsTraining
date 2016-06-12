@@ -12,7 +12,7 @@
 ## Creating Project in Visual Studio
 1. Start Visual Studio
 
-1. Connect to https://practicaldevopscph.visualstudio.com in Team Explorer and select the Team Project of the name Team-[yourTeamName]
+1. Connect to https://practicaldevops.visualstudio.com in Team Explorer and select the Team Project of the name cph-Team-[yourTeamName]
 ![Connect to your team project](img/connect-to-vsts.png)
    
 1. Clone the repository to your disk
@@ -20,7 +20,7 @@
 ![Connect to your team project](img/clone-repo.png)
 
 
-1. Create a new web project. **Disable** Application Insights for now. We will add Application Insights later.<br/> 
+1. Create a new web project. **Disable** Application Insights for now. We will add Application Insights later. Call the application **Books**.<br/> 
    ![New Web Project in VS](img/create-new-with-vsts-guided.png)
 
 1. Use the **ASP.NET 4.5.2 "Empty" Template**:<br/>
@@ -95,4 +95,3 @@
 
 * Building a console app that hosts our Web API without IIS
 * Add additional middleware components (e.g. CORS, authentication) to demonstrate modular architecture with NuGet
-* Add the Angular 2 client ([source](../Sample/AspNetCore1/src), [Gulpfile](../Sample/AspNetCore1/Gulpfile.js), `.json` config files) to the project
