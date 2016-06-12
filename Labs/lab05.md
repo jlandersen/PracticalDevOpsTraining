@@ -83,7 +83,7 @@ If you have time left, you could additionally cover topics like:
 ## Setup CD to Azure
 
 1. In VSTS project options, goto *Services* area. Add a service endpoint for Azure<br/>
-   ![VSTS Services](/img/vsts-connect-azure.png)
+   ![VSTS Services](img/vsts-connect-azure.png)
 
 1. Select *Certificate Based* and follow the link *download publish settings file*. Open the publish settings file and copy the required data into VSTS.
 
