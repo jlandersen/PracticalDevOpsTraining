@@ -10,10 +10,6 @@
 
 ## Create Application Insights
 
-1. **Discussion points:**
-   * Discuss why telemetry and logging are important especially in Microservices architectures
-   * Describe the basics of Application Insights (e.g. high-level features, architecture, pricing models, etc.)
-
 1. Open [Azure Portal](https://portal.azure.com) and sign in.
 
 1. Add *Application Insights* named `PracticalDevOps-Dev` to the resource group `PracticalDevOps-Dev`.<br/>
@@ -39,6 +35,8 @@
         ...
     </configuration>
    ```
+
+1. Add the `Microsoft.ApplicationInsights.Web` NuGet package to the Books project
 
 1. Add code setting the instrumentation key to `Startup.cs`:
    ``` 
@@ -67,9 +65,35 @@
         ...
     }
    ```
+   
+    ```
+    [HttpPost]
+    [Route("books")]
+    public IHttpActionResult Post(Book newBook)
+    {
+        var telemetryClient = new TelemetryClient();
+        telemetryClient.TrackEvent($"Trying to add a book");
 
-1. **Discussion points:**
-   * Describe basics of Application Insights SDK (e.g. exception logging, metrics)
+        // For demo purposes, return an HTTP 500 error (used to demonstrate logging)
+        return this.InternalServerError();
+    }
+   ```
+
+1. Copy Request tracking middleware implementation from [Assets/Exercise-4-Telemetry](Assets/Exercise-4-Telemetry)  that logs information about all requests to Application Insights.
+
+1. Configure OWIN to use the request tracking middleware by updating `Configuration` method in `Startup.cs`:
+   ``` 
+    public void Configuration(IAppBuilder app)
+    {
+        TelemetryConfiguration.Active.InstrumentationKey = ConfigurationManager.AppSettings["InstrumentationKey"];
+
+        app.UseApplicationInsights();
+
+        // Allow CORS
+        app.UseCors(CorsOptions.AllowAll);
+        ...
+    }
+   ```
 
 
 ## Run Application and View Telemetry
@@ -83,18 +107,9 @@
 
 1. See if your application telemetry appears.
 
-1. **Discussion points:**
-   * Let people play a bit with building Application Insights dashboards in the Azure portal
-   * Describe concept of custom processing of Application Insights data
-   * Brief overview about other Application Insights modules (e.g. for IaaS)
-
 1. Open *Application Insights Search* in Visual Studio while debugging your application. Refresh `http://localhost:2690/api/books` multiple times. See if your application telemetry appears.<br/>
    ![Application Insights Search](img/visual-studio-application-insights.png)
    
- 1. **Discussion points:**
-    * Point out how calls to dependent services are tracked automatically
-    * Show how unnecessary calls to Blob Storage in our app become visible by analyzing Application Insights telemetry data
-
    
 ## Further Ideas
 
