@@ -147,5 +147,3 @@
 If you have time left, you could additionally cover topics like:
 
 * Create [custom validation rule](https://msdn.microsoft.com/en-us/library/ms182556.aspx)
-* Use web UI from final sample code to demo HTML-related web test features
-* (Not recommended but possible if you have a very web-development-oriented audience) Add a Jasmine unit test for Angular client
