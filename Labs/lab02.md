@@ -102,3 +102,7 @@
 1. Replace `Services/NameGenerator.cs` with the implementation from [Exercise-2-Service-Implementation](Assets/Exercise-2-Service-Implementation/NameGenerator.cs).
 
 1. Run your Web Api `http://localhost:2690/api/books` using a browser or *Postman* and note how the book names are now generated based on data from Azure Storage.
+
+## Further Ideas If You Have Time
+
+* Change the implementation to use the storage SDK instead (`WindowsAzure.Storage` NuGet package)
