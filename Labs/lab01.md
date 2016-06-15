@@ -34,8 +34,6 @@
    * `Install-Package Microsoft.AspNet.WebApi.Owin`
    * `Install-Package Microsoft.Owin.Host.SystemWeb`
    * `Install-Package Microsoft.Owin.Cors`
-   * `Install-Package Microsoft.ApplicationInsights.Web`
-   * `Install-Package WindowsAzure.Storage`
 
 
 1. Add an OWIN Startup Class:<br/>

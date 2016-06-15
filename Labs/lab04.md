@@ -20,7 +20,6 @@
 
 
 ## Configure Application to Use Application Insights   
-
 1. Add the `InstrumentationKey` setting to your `web.config` file.
    ```
     <?xml version="1.0" encoding="utf-8"?>

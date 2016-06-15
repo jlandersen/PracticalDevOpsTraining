@@ -80,6 +80,8 @@
 
 
 ## Change Web API
+1. Add the necessary NuGet package to get the Azure Storage SDK
+   * `Install-Package WindowsAzure.Storage`
 
 1. Add the `BookNameTokenUrl` setting to your `web.config` file. It contains the URL with the SAS. **Note that you have to replace `&` characters with `&amp;` as `web.config` is an XML file.**
    ```

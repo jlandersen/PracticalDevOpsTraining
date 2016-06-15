@@ -36,9 +36,9 @@
 
 ## Run Load Test in VSTS
 
-1. **Discussion points:**
+<!--1. **Discussion points:**
    * Describe advantages of load testing in the cloud
-
+-->
 1. Right-click on solution and add new *Test Settings* named *Cloud*.<br/>
    ![Add new test settings](img/add-cloud-test-settings.png)
 
@@ -72,7 +72,7 @@
    * How could we gather more detailed exception information?<br/>
      Add OWIN unhandled exception handler that logs to Application Insights.<br/>
      ![Detailed exception message in AI](img/detailed-exception-message.png)<br/>
-     Here is the necessary code (only recommended in a rather dev-oriented audience):
+   <!--  Here is the necessary code (only recommended in a rather dev-oriented audience):
      ```
         namespace Books
         {
@@ -103,7 +103,7 @@
                 ...
             }
         }
-     ```
+     ```-->
 
 1. In the web test's request properties, set *think time* to five seconds.<br/>
    ![Set think time](img/change-think-time.png)
