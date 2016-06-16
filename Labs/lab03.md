@@ -39,9 +39,9 @@
 
 ## Add and Run Tests
 
-1. **Discussion points:**
+<!--1. **Discussion points:**
    * Describe the concept of mocking
-   * Short introduction to Microsoft Fakes (shims vs. stubs)
+   * Short introduction to Microsoft Fakes (shims vs. stubs)-->
 
 1. Add *Fakes* assembly for `Books` reference:<br/>
    ![Add Fakes](img/add-fakes-assembly.png)
@@ -62,9 +62,9 @@
 
 1. Copy `.cs` files from [Assets/Exercise-3-Tests](Assets/Exercise-3-Tests) into your test project. Make yourself familiar with the two test files.
 
-1. **Discussion points:**
+<!--1. **Discussion points:**
    * Short introduction into unit testing with Visual Studio
-   * Describe how OWIN is used to host a web server in an integration test (`IntegrationTest.cs`)
+   * Describe how OWIN is used to host a web server in an integration test (`IntegrationTest.cs`)-->
 
 1. Build your test project. There should not be errors.
 
@@ -74,10 +74,10 @@
 
 ## Add Web Test
 
-1. **Discussion points:**
+<!--1. **Discussion points:**
    * Describe different type of web testing (e.g. API testing, end-to-end testing)
    * Mention and describe other important web test tools (e.g. [Protractor](http://angular.github.io/protractor/#/) for AngularJS, [Selenium](http://www.seleniumhq.org/) for browser automation) and their integration in Visual Studio (e.g. blog article [Getting Started with Selenium Testing in a Continuous Integration Pipeline with Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/01/27/getting-started-with-selenium-testing-in-a-continuous-integration-pipeline-with-visual-studio/))
-   * Short introduction to Visual Studio Web Tests
+   * Short introduction to Visual Studio Web Tests-->
 
 1. Add a new *Web Performance and Load Test Project*.<br/>
    ![Add Web Test Project](img/visual-studio-add-web-test.png)
@@ -88,8 +88,8 @@
 1. Add web request to our *Get Books* Web API.<br/>
    ![Add request to Web Test](img/add-request-to-web-test.png)
 
-1. **Discussion points:**
-   * Describe other capabilities of Visual Studio Web Tests (e.g. loops, conditions, data-driven tests, parameters)
+<!--1. **Discussion points:**
+   * Describe other capabilities of Visual Studio Web Tests (e.g. loops, conditions, data-driven tests, parameters)-->
 
 1. Open the request's properties and change the URL appropriately.<br/>
    ![Change URL in request's properties](img/request-test-properties.png)
@@ -103,10 +103,10 @@
 1. Make yourself familiar with the web test after server parameterization.<br/>
    ![Test after parameterization](img/parameterized-web-server.png)
 
-1. **Discussion points:**
+<!--1. **Discussion points:**
    * Describe other request properties offered by Visual Studio
    * Describe validation rules
-   
+   -->
 1. Start an instance of your OWIN web server (press *Ctrl+F5* to start it without debugger).
 
 1. Run the web test.<br/>
@@ -131,9 +131,9 @@
    * 5 seconds sampling rate
    * Constant load of 10 users
    * Add the `GetBooksTest` to the load test
-
+<!--
 1. **Discussion points:**
-   * Describe other capabilities of Visual Studio load testing
+   * Describe other capabilities of Visual Studio load testing-->
 
 1. Run load test.<br/>
    ![Run load test](img/run-load-test.png)
