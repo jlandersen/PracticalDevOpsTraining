@@ -19,9 +19,9 @@
 1. Add *Web App* named `PracticalDevOps-Dev` (you might have to replace this with another name if it has already been taken) to the resource group `PracticalDevOps-Dev`. Make sure that the App Service plan is in the same Data Center Region as your storage account.<br/>
    ![Add Web App](img/create-web-app.png)
 
-1. **Discussion points:**
+<!--1. **Discussion points:**
    * Introduction to Azure App Services Web Apps
-   * Difference IaaS vs. PaaS (control vs. cost-efficiency)
+   * Difference IaaS vs. PaaS (control vs. cost-efficiency)-->
 
 1. Once the web app has been created, go to the *Tools* section.<br/>
    ![Web App Tools](img/web-app-tools.png)
@@ -36,11 +36,11 @@
 
 1. Accept the suggestions of the Build Setup Wizard.
 
-1. **Discussion points:**
+<!--1. **Discussion points:**
    * Speak about how branches, build processes and deployment slots can be used for dev/test/prod
    * Build process walk-through
    * Overview about additional build steps that would be possible
-   * Describe concept of cross-platform build agents
+   * Describe concept of cross-platform build agents-->
 
 1. Add the following arguments to MSBuild in step *Visual Studio Build* (necessary for creating the Web Deploy package): `/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.stagingDirectory)"`<br/>
    ![MSBuild Arguments](img/vsts-msbuild-arguments.png)
@@ -60,7 +60,7 @@
    
 1. For testing purposes, screw up tests (e.g. by removing the `Ignore` attribute from test `IgnoredTest`), check your changes in, and see the build failing. Remember to fix your code again so that you can continue with the rest of the exercise.
 
-## Setup Versioning of your application using GitVersion
+<!--## Setup Versioning of your application using GitVersion
 
 1. Use the Extension manager to find the "Git Version" extension
 
@@ -70,13 +70,13 @@
 
 1. Change the "Build Number format" on the "General" tab to be `$(Build.DefinitionName)_$(GITVERSION_FullSemVer)`
 
-1. Run another build
+1. Run another build-->
 
-## Further Ideas
+<!--## Further Ideas
 
 If you have time left, you could additionally cover topics like:
 
-* Read http://gitversion.readthedocs.io 
+* Read http://gitversion.readthedocs.io -->
 
 ## Setup CD to Azure
 
@@ -88,9 +88,9 @@ If you have time left, you could additionally cover topics like:
 1. **Discussion points:**
    * Point out security-related issues with handling publish settings files (again)
 
-1. **Discussion points:**
+<!--1. **Discussion points:**
    * Describe concepts of VSTS
-   * Overview about additional steps that would be possible
+   * Overview about additional steps that would be possible-->
    
 1. Setup deployment to Azure Web App.Use `$(build.artifactstagingdirectory)\**\*.zip`<br/>
    ![Azure Web App Deployment](img/vsts-azure-web-app-deployment.png)
