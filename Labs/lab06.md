@@ -66,14 +66,16 @@
 1. Watch load test running in the cloud. Analyze load test results in Visual Studio and in Visual Studio Online (*web report*). Test test will probably fail.<br/>
    ![Failing load test](img/failing-load-test.png)
 
-1. **Discussion points:**
-   * Discuss the consequences of this result (our app has a scalability problem)
-   * Use Application Insights (see also [exercise 4](lab04.md)) to detect the source of the problem (requests to Blob Storage start to fail after a certain period of time).
-
 <!--  How could we gather more detailed exception information?<br/>
      Add OWIN unhandled exception handler that logs to Application Insights.<br/>
      ![Detailed exception message in AI](img/detailed-exception-message.png)<br/>
 -->
+
+1. **Discussion points:**
+   * Discuss the consequences of this result (our app has a scalability problem)
+   * Use Application Insights (see also [exercise 4](lab04.md)) to detect the source of the problem (requests to Blob Storage start to fail after a certain period of time).
+
+
 
    <!--  
    Here is the necessary code (only recommended in a rather dev-oriented audience):
