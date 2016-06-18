@@ -14,11 +14,11 @@
 1. In build results, follow the link to create a release.<br/>
    ![Create release](img/vsts-setup-release.png)
 
-1. **Discussion points:**
+<!--1. **Discussion points:**
    * Describe concepts of VSTS's release management
    * Release process walk-through
    * Overview about additional steps that would be possible
-   
+   -->
 1. Setup deployment to Azure Web App.<br/>
    ![Azure Web App Deployment](img/vsts-azure-web-app-deployment.png)
 
@@ -68,10 +68,12 @@
 
 1. **Discussion points:**
    * Discuss the consequences of this result (our app has a scalability problem)
-   * Use Application Insights (see also [exercise 4](lab-04.md)) to detect the source of the problem (requests to Blob Storage start to fail after a certain period of time).
-   * How could we gather more detailed exception information?<br/>
+   * Use Application Insights (see also [exercise 4](lab04.md)) to detect the source of the problem (requests to Blob Storage start to fail after a certain period of time).
+
+<!--   * How could we gather more detailed exception information?<br/>
      Add OWIN unhandled exception handler that logs to Application Insights.<br/>
      ![Detailed exception message in AI](img/detailed-exception-message.png)<br/>
+-->
    <!--  Here is the necessary code (only recommended in a rather dev-oriented audience):
      ```
         namespace Books
