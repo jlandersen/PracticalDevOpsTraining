@@ -122,4 +122,5 @@
 
 If you have time left, you could additionally cover topics like:
 
+* Create two more Azure Web Apps  for Test and Production use and set RM up to deploy to these
 * Setup an additional build agent in a VM
