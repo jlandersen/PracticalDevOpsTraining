@@ -74,6 +74,7 @@
      Add OWIN unhandled exception handler that logs to Application Insights.<br/>
      ![Detailed exception message in AI](img/detailed-exception-message.png)<br/>
 -->
+
    <!--  Here is the necessary code (only recommended in a rather dev-oriented audience):
      ```
         namespace Books
