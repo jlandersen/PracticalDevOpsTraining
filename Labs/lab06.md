@@ -4,7 +4,7 @@
 ## Learnings
 
 1. Setting up VSTS Release Management 
-
+2. Running Load tests in the cloud with VSTS
 
 
 ## Setup Release Management
