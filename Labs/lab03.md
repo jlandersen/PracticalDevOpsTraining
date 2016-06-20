@@ -11,11 +11,11 @@
 
 ## Add Test Project
 
-1. **Discussion points:**
+<!--1. **Discussion points:**
    * Describe why test automation is very important for short iteration times and continuous delivery
    * Discuss different types of automated tests (e.g. unit tests, integration tests, automated UI tests, etc.)
    * Discuss the importance of fast tests (e.g. less costs for hosted build controllers, fast tests are executed more often, less waiting time for dev teams, etc.) and how mocking of backend services can help to achieve that 
-
+-->
 1. Add a test project to your Visual Studio solution.<br/>
    ![Add test project](img/visual-studio-add-test.png)
 
@@ -94,9 +94,9 @@
 1. Open the request's properties and change the URL appropriately.<br/>
    ![Change URL in request's properties](img/request-test-properties.png)
 
-1. **Discussion points:**
+<!--1. **Discussion points:**
    * Describe other request properties offered by Visual Studio
-
+-->
 1. Parameterize web server. This is important if you have lots of requests. With parameters, tests become much easier to maintain.<br/>
    ![Parameterize Web Server](img/parameterize-web-server.png)
 
@@ -118,9 +118,10 @@
 
 ## Add Load Test
 
-1. **Discussion points:**
+<!--1. **Discussion points:**
    * Discuss the importance of load testing
    * General overview over Visual Studio load testing capabilities
+-->
 
 1. Add load test to web test project.<br/>
    ![Add load test](img/add-load-test.png)
