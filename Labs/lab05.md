@@ -1,11 +1,10 @@
-# Exercise 5 Build, Version, Deploy, & Debug
+# Exercise 5 Build, Deploy, & Debug
 
 
 ## Learnings
 
 1. Setting up automated build
 1. Connecting VSTS and Azure
-2. Versioning your code
 2. Deploying to your Development Location
 1. Basic configuration (here: enable remote debugging) of web apps
 1. Connecting to Azure using Visual Studio Server Explorer
